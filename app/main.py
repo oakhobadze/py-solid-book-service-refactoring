@@ -1,8 +1,8 @@
 from typing import Type
-from books import Book
-from serializer import SerializerJson, SerializerXml, Serializer
-from display import DisplayConsole, DisplayReverse, Display
-from printer import PrinterConsole, PrinterReverse, Printer
+from app.books import Book
+from app.serializer import SerializerJson, SerializerXml, Serializer
+from app.display import DisplayConsole, DisplayReverse, Display
+from app.printer import PrinterConsole, PrinterReverse, Printer
 
 DISPLAYS: dict[str, Type[Display]] = {
     "console": DisplayConsole,
